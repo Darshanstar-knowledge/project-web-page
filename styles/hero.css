@@ -1,0 +1,114 @@
+.heroWrapper {
+    width: 1272px;
+    height: 660px;
+    padding: 40px;
+    padding-bottom: 0px;
+ margin-top: 160px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 40px;
+    z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+
+   
+}
+.heroWrapperImage{
+ background-image: url("https://bizprocoaching.com/wp-content/uploads/2025/07/hero-banner.webp");
+   background-size: cover;       /* makes image cover the whole area */
+  background-position: center;  /* keeps it centered */
+  background-repeat: no-repeat;
+  height: 620px;
+
+}
+
+.heroContainer{
+    width: 1140px;
+    height: 660px;
+    margin: 0px 66px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.heroText {
+    width: 570px;
+    height: 580px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+ 
+
+}
+
+.heroText>.heroText1>p{
+    font-size: 18px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgb(238, 186, 12);
+    margin: 0px;
+}
+.heroText>.heroText2>h1{
+    font-size: 72px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    line-height: 79px;
+    color: black;
+    margin: 0px;
+}
+.heroText>.heroText3>p{
+    font-size: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    line-height: 33px;
+    color: rgb(86, 90, 124);
+    margin: 0px;
+}
+.heroText>.heroText4>a{
+
+    text-decoration: none;
+}
+
+.heroText4Link{
+    width: 144px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 204, 85);
+    padding: 15px 20px;
+    white-space: nowrap;
+    
+}
+
+.heroText4Link:hover{
+    transition: 0.5s;
+    background-color: #EEBC12;
+}
+
+.heroText4>a{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-img{
+    width: 570px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+

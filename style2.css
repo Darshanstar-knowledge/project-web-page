@@ -1,0 +1,112 @@
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+/* Header wrapper */
+header {
+  width: 100%;
+  background-color: #393D40;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+/* Navbar container */
+.nav-bar {
+  height: 12.5rem; /* 125px */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+  max-height: 6rem; /* 60px */
+}
+
+/* Nav links */
+.nav-link,
+.nav-items1,
+.nav-items2 {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem; /* 18px */
+  line-height: 1.8rem; /* 18px */
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-items1:hover {
+  color: #EEBC12;
+  transition: 0.5s;
+}
+
+/* Nav items spacing */
+.nav-items {
+  display: inline-block;
+  padding: 2rem 1.5rem; /* 20px 15px */
+}
+
+/* Contact button */
+.contact {
+  background-color: rgb(240, 204, 85);
+  opacity: 1;
+  width: 15rem;  /* 150px */
+  height: 5rem;  /* 50px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact:hover {
+  background-color: #EEBC12;
+  transition: 0.5s;
+}
+
+.contact:hover a {
+  color: #ffffff;
+}
+
+/* Bootstrap overrides for toggler */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%); /* makes hamburger icon white */
+}
+
+
+
+/* my story wrapper */
+
+/* ourservices */
+
+/* successStory */
+
+/* footer */
+.footerCenterBig {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.copyright {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.TandC {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: rgb(238, 186, 12);
+}
+

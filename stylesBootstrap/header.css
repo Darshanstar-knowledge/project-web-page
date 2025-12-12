@@ -1,0 +1,129 @@
+/* Header styling */
+.header {
+  width: 100%;
+  background-color: #393D40; /* exact color */
+}
+
+/* Navbar container */
+.nav-bar {
+  max-width: 1111px;
+  height: 125px;
+  margin: 0 auto;
+  background-color: #393D40; /* exact color */
+}
+
+/* Logo */
+.logo-img {
+  width: 120px;
+  height: 125px;
+}
+.logo {
+  flex: 0 0 120px;
+  max-width: 120px;
+}
+
+/* Navbar background */
+.custom-navbar {
+  background-color: #393D40; /* exact color */
+}
+
+/* Nav items */
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 18px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+.nav-link:hover {
+  color: #EEBC12; /* hover color */
+  transition: 0.5s;
+}
+
+/* Contact button */
+.contact {
+  background-color: rgb(240, 204, 85); /* exact color */
+  width: 150px;
+  height: 50px;
+}
+.contact a {
+  color: #ffffff;
+}
+.contact:hover {
+  background-color: #EEBC12;
+  transition: 0.5s;
+}
+.contact:hover a {
+  color: #ffffff;
+}
+
+/* Toggler */
+.navbar-toggler svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+/* Mobile nav background */
+.mobile-nav {
+  background-color: #000321; /* exact color */
+  width: 100%;
+  padding: 10px 0;
+}
+.mobile-nav .nav-item {
+  text-align: left;
+  width: 100%;
+}
+.mobile-nav .nav-link {
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+.mobile-nav .nav-link:hover {
+  color: #EEBC12;
+}
+
+
+
+ /* General navbar styling */
+.header {
+  background-color: #fff;
+}
+
+/* Full-width dropdown below navbar on mobile/iPad mini */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: fixed;       /* fixed so it stays below navbar */
+    top: 120px;             /* adjust to your navbar height */
+    left: 0;
+    width: 100vw;          /* full screen width */
+    margin: 0 !important;
+    
+    box-shadow: none;
+    border: none;
+    z-index: 9999;
+  }
+
+  /* Make nav items stretch full width */
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+
+  .navbar-collapse {
+  transition: none !important;
+}
+.collapse:not(.show) {
+  display: none !important;
+}
+.collapse.show {
+  display: block !important;
+}
+
+}
+
+/* Instant toggle (no slow slide) */
+
+
+

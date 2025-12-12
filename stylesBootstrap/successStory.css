@@ -1,0 +1,127 @@
+
+
+ .successStoryWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  margin-bottom: 100px;
+}
+
+/* Fluid container for full-width cards */
+.successStoryContainer {
+  padding: 80px;
+}
+
+/* Heading styles */
+.successStorySmallText {
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgb(238, 186, 12);
+  text-transform: uppercase;
+}
+
+.successStoryBigText {
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.successStoryBigText h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 73px;
+}
+
+/* Card wrapper row */
+.successStoryCardWrapper {
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Card styles */
+.successStoryCard {
+  width: 326px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cardBigText h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+  color: black;
+}
+
+.cardSmallText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgb(86, 90, 124);
+}
+
+/* Responsive adjustments below md */
+@media (max-width: 768px) {
+  .successStoryContainer {
+    padding: 40px 20px;
+  }
+
+  /* Reduce heading sizes */
+  .successStoryBigText h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .successStorySmallText h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* Stack cards full width */
+  .successStoryCardWrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .successStoryCard {
+    width: 100%;              /* full width below md */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* center image */
+    justify-content: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  
+
+  .successStoryCard figure {
+    display: flex;
+    justify-content: center;   /* center image horizontally */
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Left-align text inside card */
+  .successStoryCard .cardBigText h3,
+  .successStoryCard .cardSmallText {
+    text-align: left;
+    width: 100%;
+  }
+}
+.cardSmallText{
+    text-align: center;
+}
+
+
+

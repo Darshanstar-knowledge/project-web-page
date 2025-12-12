@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+
+
+
+    <!-- font awsome link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- css link -->
+
+    <link rel="stylesheet" href="../stylesBootstrap/header.css">
+    <link rel="stylesheet" href="../stylesBootstrap/hero.css">
+    <link rel="stylesheet" href="../stylesBootstrap/mystory.css">
+    <link rel="stylesheet" href="../stylesBootstrap/ourServices.css">
+    <link rel="stylesheet" href="../stylesBootstrap/successStory.css">
+    <link rel="stylesheet" href="../stylesBootstrap/faqs.css">
+    <link rel="stylesheet" href="../stylesBootstrap/footer.css">
+</head>
+
+<body>
+
+    <header class="fixed-top z-3 header">
+        <nav class="navbar navbar-expand-lg custom-navbar p-3">
+            <div class="container-fluid px-lg-0 px-4 nav-bar">
+                <div class="row">
+
+                </div>
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center justify-content-center logo me-lg-3 col-3"
+                    href="./test2.html">
+                    <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/cropped-Header-footer-logo-1.webp"
+                        alt="default-logo" class="img-fluid logo-img">
+                </a>
+
+                <!-- Toggler (shows < lg) -->
+                <button class="navbar-toggler p-1 border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- Custom SVG icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24">
+                        <rect width="16" height="2"></rect>
+                        <rect y="6" width="16" height="2"></rect>
+                        <rect y="12" width="16" height="2"></rect>
+                    </svg>
+                </button>
+
+                <!-- Collapsible Nav -->
+                <div class="collapse navbar-collapse" id="mainNav">
+
+                    <!-- Mobile nav (visible < lg) -->
+                    <ul class="navbar-nav d-lg-none mobile-nav">
+                        <li class="nav-item"><a href="#my-story" class="nav-link fw-normal">My Story</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link fw-normal">Services</a></li>
+                        <li class="nav-item"><a href="#success-stories" class="nav-link fw-normal">Success Stories</a>
+                        </li>
+                        <li class="nav-item"><a href="#faqs" class="nav-link fw-normal">FAQ’s</a></li>
+                        <li class="nav-item">
+                            <span class="d-flex align-items-center justify-content-center contact">
+                                <a href="#contact" class="nav-link fw-bold">Contact Us</a>
+                            </span>
+                        </li>
+                    </ul>
+
+                    <!-- Desktop nav (visible ≥ lg) -->
+                    <ul class="navbar-nav ms-auto d-none d-lg-flex">
+                        <li class="nav-item px-3"><a href="#my-story" class="nav-link fw-normal">My Story</a></li>
+                        <li class="nav-item px-3"><a href="#services" class="nav-link fw-normal">Services</a></li>
+                        <li class="nav-item px-3"><a href="#success-stories" class="nav-link fw-normal">Success
+                                Stories</a></li>
+                        <li class="nav-item px-3"><a href="#faqs" class="nav-link fw-normal">FAQ’s</a></li>
+                        <li class="nav-item px-3">
+                            <span class="d-flex align-items-center justify-content-center contact">
+                                <a href="#contact" class="nav-link">Contact Us</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <section class="hero-bg">
+        <div class="container hero-wrapper d-flex justify-content-center align-items-center">
+            <div class="row flex-sm-row flex-column d-flex align-items-center justify-content-center">
+                <div class="col-md col-12 ms-md-5 ps-md-5"><img
+                    class="ms-md-4 ps-md-0"
+                        src="https://bizprocoaching.com/wp-content/uploads/2025/07/Home-Banner-image.webp"
+                        alt="HomePage-Profile" class="img-fluid" width="433" height="619" decoding="async"
+                        fetchpriority="high"></div>
+                <div class="col-md col-12 d-flex flex-column align-items-start justify-items-center gap-md-3 ">
+                    <div class="heroText1 ">
+                        <p class="m-0">BUSINESS COACH | LIFE COACH</p>
+                    </div>
+                    <div class="heroText2">
+                        <h1 class="m-0">Ready to transform your Business?</h1>
+                    </div>
+                    <div class="heroText3">
+                        <p class="m-0">
+                            As your coach, I’ll guide you every step of the way.<br>
+                            But first, let’s talk.
+                        </p>
+                    </div>
+                    <div class="heroText4">
+                        <a href="https://calendly.com/bizprocoaching/free-discovery-call" target="_blank"
+                            class="text-decoration-none">
+                            <span class="heroText4Link d-flex justify-content-center align-items-center">
+                                <span>Book Now</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</html>
+</body>
+
+</html>

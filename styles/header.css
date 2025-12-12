@@ -1,0 +1,108 @@
+header{
+    
+    width: 100%;
+    padding: 15px 120px;
+    background-color: #393D40;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.nav-bar {
+    width: 1111px;
+    height: 125px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #393D40;
+    
+   
+
+}
+
+.logo {
+    width: 283px;
+    height: 125px;
+    background-color: #393D40;
+}
+
+
+
+.nav {
+    margin-left: 120px;
+    height: 58px;
+    width: 690px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-end;
+    
+}
+
+.nav>ul {
+    width: 690px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+
+
+.nav>ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;   /* keeps "Contact Us" on one line */
+    /* remove width and height here */
+}
+
+.nav-items{
+    display: inline-block;
+   
+    padding: 20px 15px;
+    
+}
+
+
+.nav-items>.nav-items1:hover{
+    color: #EEBC12;
+    
+    transition: 0.5s;
+}
+
+
+
+.contact {
+    background-color: rgb(240, 204, 85);
+    opacity: 1;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact:hover {
+    background-color: #EEBC12;   
+    transition: 0.5s;
+}
+
+
+.contact:hover a {
+    color: #ffffff;
+}
+
+
+
+
+/* hero section */

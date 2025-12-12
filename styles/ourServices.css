@@ -1,0 +1,102 @@
+.parallax {
+    position: relative;
+    background-image: url(https://bizprocoaching.com/wp-content/uploads/2025/07/second-bg-image-scaled.webp);
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+}
+
+.overLayer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* white with alpha */
+  
+  z-index: 1;                                 /* sits above background */
+}
+
+
+.ourServices {
+    width: 100%;
+    padding: 80px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.ourServices>.cardWrapper {
+    margin: 25.5;
+    z-index: 2;
+
+}
+
+
+
+
+.cardWrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    width: 360px;
+    height: 520px;
+    
+    background-color:#EEBC12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1 ,.card2, .card3{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 20px 20px;
+}
+
+.card h3{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.card p{
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 30px;
+ color: white;
+}
+
+.ourServicesText>h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 59px;
+    color: black;
+}
+
+.ourServicesText{
+    z-index: 2;
+    position: relative;
+    bottom: 40px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+

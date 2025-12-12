@@ -1,0 +1,120 @@
+
+ footer {
+  width: 100%;
+}
+
+.footerWrapper {
+  width: 100%;
+  height: 205px;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000321;
+}
+
+.footerLogo {
+  width: 298px;
+}
+.footerLogo img {
+  margin-left: auto;
+  position: relative;
+  left: 95px;
+}
+
+.footerCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footerCenter h5,
+.footerCenter p,
+.footerCenter h6 {
+  margin-bottom: 5px;
+}
+
+.footerCenterBig {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+
+.copyright {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+}
+
+.TandC {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgb(238, 186, 12);
+}
+
+.footerIcon {
+  width: 298px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 45px;
+}
+.icon {
+  width: 238px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facebook {
+  margin-right: 25px;
+}
+
+/* ✅ Responsive adjustments below md */
+@media (max-width: 768px) {
+  .footerWrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 100px;
+  }
+
+  .footerWrapper>.container-fluid .row{
+    display: flex;
+    gap: 20px;
+  }
+
+  .footerLogo img {
+    left: 0;
+    margin-left:  50px;
+    
+  }
+
+  .footerIcon {
+    position: static;
+    width: 100%;
+    margin:0;
+  }
+
+  .icon {
+    width: auto;
+    display: flex;
+    gap: 35px;
+  }
+
+  .facebook{
+    margin: 0px;
+  }
+}
+
+
+

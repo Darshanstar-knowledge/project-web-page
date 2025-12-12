@@ -1,0 +1,43 @@
+
+.myStoryWrappe{
+    
+    display: flex;
+   
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+    justify-content: space-around;
+    padding: 80px 120px;
+    background-color: #393D40;
+}
+    
+
+
+
+.myStoryWrappe>.myStoryH1>h2{
+    
+    width: 889px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.myStoryWrappe p{
+    color: rgb(136, 147, 168);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.myStoryText1{
+    width:1055px ;
+}
+
+.myStoryText2{
+    width:1055px ;
+}
+
+

@@ -1,0 +1,92 @@
+footer{
+    width: 100%;
+}
+
+
+.footerWrapper {
+    width: 100%;
+    height: 205px;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#000321;
+
+}
+
+.footerIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerLogo{
+    width: 298px;
+}
+.footerLogo img{
+    margin-left: auto;
+    position: relative;
+    left: 95px;
+}
+
+.footerCenter h5,
+p,
+h6{
+    margin-bottom: 5px;
+}
+
+.footerCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerIcon{
+    width: 298px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 45px;
+}
+.icon{
+    width: 238px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook{
+    margin-right: 25px;
+}
+
+
+.footerCenterBig{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    
+}
+
+.copyright{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+    
+}
+
+.TandC{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgb(238, 186, 12);
+
+}
