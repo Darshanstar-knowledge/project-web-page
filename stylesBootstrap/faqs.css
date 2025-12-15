@@ -1,21 +1,15 @@
-
-    .accordionContainer {
-  width: 100%;
+.accordionContainer {
   padding: 80px 120px;
   background-color: #222639;
 }
 
 .accordionHeading > h2 {
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
   font-size: 56px;
   line-height: 73px;
-  color: #fff;
 }
 
 .accordion {
-  margin-top: 20px;
   padding: 0 80px;
   position: relative;
   z-index: 0;
@@ -25,14 +19,10 @@
   background-color: #222639;
   border: 1px solid #33374f;
   border-radius: 10px;
-  margin-bottom: 10px;
   overflow: hidden;
 }
 
 .accordion-header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px;
   cursor: pointer;
   background-color: inherit;
@@ -42,7 +32,6 @@
 
 .accordion-title {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: rgb(201, 216, 224);
@@ -59,23 +48,15 @@
 .accordion-body {
   background-color: #1F1F2E;
   color: rgb(136, 147, 168);
-  width: 100%;
   padding: 20px;
   border-radius: 0 0 10px 10px;
   transition: background-color 0.5s, color 0.5s;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
 }
 
-.accordion-collapse.collapsing .accordion-body,
-.accordion-collapse.show .accordion-body {
-  background-color: #1F1F2E;
-  color: rgb(136, 147, 168);
-}
-
-/* Responsive adjustments below md */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .accordionContainer {
     padding: 40px 20px;
@@ -90,4 +71,3 @@
     padding: 0 20px;
   }
 }
-

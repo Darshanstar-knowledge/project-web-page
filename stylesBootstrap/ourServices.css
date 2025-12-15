@@ -1,6 +1,4 @@
-
-    /* Parallax background */
-/* Parallax background (colors/fonts preserved) */
+/* Parallax background */
 .parallax {
   position: relative;
   background-image: url("https://bizprocoaching.com/wp-content/uploads/2025/07/second-bg-image-scaled.webp");
@@ -20,74 +18,58 @@
 
 /* Services wrapper */
 .ourServices {
-  width: 100%;
   padding: 80px 80px;
   position: relative;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* Heading (colors/fonts preserved) */
+/* Heading */
 .ourServicesText {
   position: relative;
   bottom: 40px;
-  width: 100%;
-  text-align: center;
   z-index: 2;
 }
 
 .ourServicesText h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 45px;
-  font-weight: 700;
   line-height: 59px;
   color: black;
   margin: 0;
 }
 
-/* Card wrapper row (Bootstrap gutters handle spacing) */
+/* Card wrapper row */
 .cardWrapper {
   gap: 30px;
 }
 
-/* Card (desktop/tablet: single line, fixed width, centered content) */
+/* Card */
 .card {
-  width: 360px;       /* maintain fixed width above md */
+  width: 360px;
   height: 520px;
   background-color: #EEBC12;
   display: flex;
   flex-direction: column;
-  align-items: center;   /* center content above md */
-  justify-content: center;
   padding: 20px;
-  margin: 0 auto;
 }
 
-/* Grid inside each card (preserved) */
+/* Grid inside each card */
 .card1, .card2, .card3 {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
-/* Typography (colors/fonts preserved) */
+/* Typography */
 .card h3 {
   font-size: 28px;
-  font-weight: 700;
   line-height: 36px;
   font-family: 'Montserrat', sans-serif;
-  color: white;
-  text-align: center; /* above md */
 }
 
 .card p {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
   font-size: 18px;
   line-height: 30px;
-  color: white;
-  text-align: center; /* above md */
 }
 
 /* Images responsive */
@@ -96,36 +78,32 @@
   height: auto;
 }
 
-/* Mobile: stack cards full width; image centered; text left */
+/* Mobile */
 @media (max-width: 768px) {
   .ourServices {
-    padding: 60px 20px; /* keep colors, just tighter padding on mobile */
+    padding: 60px 20px;
   }
 
   .card {
-    width: 100%;              /* take full width below md */
+    width: 100%;
     height: auto;
     justify-content: flex-start;
-    align-items: flex-start;  /* do NOT center everything */
+    align-items: flex-start;
   }
 
-  /* Center the image only */
   .cardImage {
     display: flex;
-    justify-content: center;  /* horizontally center the image */
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 15px;
   }
 
-  /* Left-align text blocks */
   .card h3,
   .card p,
   .cardH3,
   .cardP {
-    text-align: left; /* text starts from left */
+    text-align: left;
     width: 100%;
   }
 }
-
-

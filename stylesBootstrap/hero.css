@@ -4,7 +4,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
   min-height: 620px; /* baseline desktop height */
   padding: 40px 40px 0px 40px;
 }
@@ -12,7 +11,7 @@
 /* Wrapper */
 .hero-wrapper {
   max-width: 1272px;
-  margin-top: 70px;
+  margin-top: 110px; /* restored exact spacing */
   position: relative;
   z-index: 1;
 }
@@ -21,16 +20,12 @@
 .hero-row {
   max-width: 1140px;
   margin: 0 66px;
-  
 }
 
-.hero-text{
+.hero-text {
   position: relative;
   bottom: 30px;
-  gap: 15px;
 }
-
-
 
 /* Typography overrides */
 .heroText1 > p {
@@ -38,25 +33,21 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 500;
   letter-spacing: 2px;
 }
 
 .heroText2 > h1 {
-  font-size: 72px  ;
+  font-size: 72px;
   font-family: 'Montserrat', sans-serif;
-  line-height: 79px  ;
-  color: black ;
-  font-weight: 700;
+  line-height: 79px;
+  color: black;
 }
 
 .heroText3 > p {
   font-family: 'Montserrat', sans-serif;
   line-height: 33px;
-  color: 
-rgb(86, 90, 124);
-font-size: 20px;
-font-weight: 400;
+  color: rgb(86, 90, 124);
+  font-size: 20px;
 }
 
 .heroText4Link {
@@ -65,10 +56,8 @@ font-weight: 400;
   background-color: rgb(240, 204, 85);
   padding: 15px 20px;
   white-space: nowrap;
-  color: white;
   font-size: 20px;
   line-height: 20px;
-  font-weight: 400;
 }
 
 .heroText4Link:hover {
@@ -96,78 +85,41 @@ font-weight: 400;
     margin-top: 100px;
     width: 100%;
   }
-.hero-img{
-  object-fit: cover;
-}
+
+  .hero-img {
+    object-fit: cover;
+  }
+
   .hero-row {
     margin: 0;
-    
   }
 
   .heroText2 > h1 {
-    font-size: 30px ;
-    line-height: 30px ;
+    font-size: 30px;
+    line-height: 30px;
     text-align: center;
-
-    
   }
+
   .heroText1 > p {
-    font-size: 14px ;
-    line-height: 26px ;
+    font-size: 14px;
+    line-height: 26px;
     text-align: center;
-
-    
   }
 
-  .hero-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
+  .hero-text {
+    position: static;
     margin: 20px;
     margin-bottom: 40px;
+    text-align: center;
+    gap: 15px;
   }
-  .hero-text p{
+
+  .hero-text p {
     text-align: center;
     width: 100%;
   }
 
-
-  .heroText1{
+  .heroText1 {
     margin-left: 40px;
   }
-
-
-
-  .hero-text{
-  position: static;
-display: flex;
-flex-direction: column;
-gap: 15px;
- 
 }
-
-}
-
-/* @media (min-width: 768px) and (max-width: 1024px) {
-  /* Your styles here */
-  /* .heroText1 p{
-    font-size: 14px;
-    line-height: 23px;
-  }
-  .heroText2 h1{
-font-size: 10px ;
-line-height: 65px;
-
-  } 
-  .heroText3 p{
-font-size: 18px;
-line-height: 30px;
-  } */
- 
-/* } */ */
-
-
-

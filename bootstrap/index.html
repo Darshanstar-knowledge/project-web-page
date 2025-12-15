@@ -1,236 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 
 
-<style>
-  .container, .container-fluid{
-    margin: 0px;
-  }
-</style>
+  <style>
+    .container,
+    .container-fluid {
+      margin: 0px;
+    }
+  </style>
 
-    <!-- font awsome link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-        
+  <!-- font awsome link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-        <!-- css link -->
 
-        <link rel="stylesheet" href="../stylesBootstrap/header.css">
-        <link rel="stylesheet" href="../stylesBootstrap/hero.css">
-        <link rel="stylesheet" href="../stylesBootstrap/mystory.css">
-        <link rel="stylesheet" href="../stylesBootstrap/ourServices.css">
-        <link rel="stylesheet" href="../stylesBootstrap/successStory.css">
-        <link rel="stylesheet" href="../stylesBootstrap/faqs.css">
-        <link rel="stylesheet" href="../stylesBootstrap/footer.css">
-  
+  <!-- css link -->
+
+  <link rel="stylesheet" href="../stylesBootstrap/header.css">
+  <link rel="stylesheet" href="../stylesBootstrap/hero.css">
+  <link rel="stylesheet" href="../stylesBootstrap/mystory.css">
+  <link rel="stylesheet" href="../stylesBootstrap/ourServices.css">
+  <link rel="stylesheet" href="../stylesBootstrap/successStory.css">
+  <link rel="stylesheet" href="../stylesBootstrap/faqs.css">
+  <link rel="stylesheet" href="../stylesBootstrap/footer.css">
+
 
 
 
 </head>
+
 <body>
 
-<header class="fixed-top z-3 header">
-  <nav class="navbar navbar-expand-lg custom-navbar p-3">
-    <div class="container-fluid px-lg-0 px-4 nav-bar">
-      
-      <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center justify-content-center logo me-lg-3" href="./test2.html">
-        <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/cropped-Header-footer-logo-1.webp" 
-             alt="default-logo" class="img-fluid logo-img">
-      </a>
+  <header class="fixed-top z-3 header w-100">
+    <nav class="navbar navbar-expand-lg custom-navbar p-3">
+      <div class="container-fluid px-lg-0 px-4 nav-bar mx-auto">
 
-      <!-- Toggler (shows < lg) -->
-      <button class="navbar-toggler p-1 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" 
-              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- Custom SVG icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24">
-          <rect width="16" height="2"></rect>
-          <rect y="6" width="16" height="2"></rect>
-          <rect y="12" width="16" height="2"></rect>
-        </svg>
-      </button>
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center justify-content-center logo me-lg-3" href="./test2.html">
+          <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/cropped-Header-footer-logo-1.webp"
+            alt="default-logo" class="img-fluid logo-img">
+        </a>
 
-      <!-- Collapsible Nav -->
-      <div class="collapse navbar-collapse" id="mainNav">
-        
-        <!-- Mobile nav (visible < lg) -->
-        <ul class="navbar-nav d-lg-none mobile-nav">
-          <li class="nav-item"><a href="#my-story" class="nav-link fw-normal">My Story</a></li>
-          <li class="nav-item"><a href="#services" class="nav-link fw-normal">Services</a></li>
-          <li class="nav-item"><a href="#success-stories" class="nav-link fw-normal">Success Stories</a></li>
-          <li class="nav-item"><a href="#faqs" class="nav-link fw-normal">FAQ’s</a></li>
-          <li class="nav-item">
-            <span class="d-flex align-items-center justify-content-center contact">
-              <a href="#contact" class="nav-link fw-bold">Contact Us</a>
-            </span>
-          </li>
-        </ul>
+        <!-- Toggler -->
+        <button class="navbar-toggler p-1 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+            <rect width="16" height="2"></rect>
+            <rect y="6" width="16" height="2"></rect>
+            <rect y="12" width="16" height="2"></rect>
+          </svg>
+        </button>
 
-        <!-- Desktop nav (visible ≥ lg) -->
-        <ul class="navbar-nav ms-auto d-none d-lg-flex">
-          <li class="nav-item px-3"><a href="#my-story" class="nav-link fw-normal">My Story</a></li>
-          <li class="nav-item px-3"><a href="#services" class="nav-link fw-normal">Services</a></li>
-          <li class="nav-item px-3"><a href="#success-stories" class="nav-link fw-normal">Success Stories</a></li>
-          <li class="nav-item px-3"><a href="#faqs" class="nav-link fw-normal">FAQ’s</a></li>
-          <li class="nav-item px-3">
-            <span class="d-flex align-items-center justify-content-center contact">
-              <a href="#contact" class="nav-link">Contact Us</a>
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+        <!-- Collapsible Nav -->
+        <div class="collapse navbar-collapse" id="mainNav">
 
+          <!-- Mobile nav -->
+          <ul class="navbar-nav d-lg-none mobile-nav">
+            <li class="nav-item"><a href="#my-story" class="nav-link fw-normal text-white d-block">My Story</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link fw-normal text-white d-block">Services</a></li>
+            <li class="nav-item"><a href="#success-stories" class="nav-link fw-normal text-white d-block">Success
+                Stories</a></li>
+            <li class="nav-item"><a href="#faqs" class="nav-link fw-normal text-white d-block">FAQ’s</a></li>
+            <li class="nav-item">
+              <span class="d-flex align-items-center justify-content-center contact">
+                <a href="#contact" class="nav-link fw-bold text-white">Contact Us</a>
+              </span>
+            </li>
+          </ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="hero-bg d-flex justify-content-center ">
-  <div class="container hero-wrapper ">
-    <div class="row align-items-center  justify-content-center hero-row mt-5 ">
-      
-      <!-- Image Column -->
-      <div class="col-md-5 col-12  hero-img  ">
-        <img
-          src="https://bizprocoaching.com/wp-content/uploads/2025/07/Home-Banner-image.webp"
-          alt="HomePage-Profile"
-          width="433"
-          height="619"
-          decoding="async"
-          fetchpriority="high"
-          class="img-fluid"
-          
-        >
-      </div>
-
-      <!-- Text Column -->
-      <div class="col-md-7 col-12 hero-text d-flex flex-column align-items-md-start align-items-center  ">
-        <div class="heroText1">
-          <p class="">BUSINESS COACH | LIFE COACH</p>
-        </div>
-        <div class="heroText2">
-          <h1 class=" ">Ready to transform your Business?</h1>
-        </div>
-        <div class="heroText3">
-          <p class="">
-            As your coach, I’ll guide you every step of the way.<br>
-            But first, let’s talk.
-          </p>
-        </div>
-        <div class="heroText4 ">
-          <a href="https://calendly.com/bizprocoaching/free-discovery-call" target="_blank" class="text-decoration-none">
-            <span class="heroText4Link d-flex justify-content-center align-items-center">
-              <span>Book Now</span>
-            </span>
-          </a>
+          <!-- Desktop nav -->
+          <ul class="navbar-nav ms-auto d-none d-lg-flex">
+            <li class="nav-item px-3"><a href="#my-story" class="nav-link fw-normal text-white">My Story</a></li>
+            <li class="nav-item px-3"><a href="#services" class="nav-link fw-normal text-white">Services</a></li>
+            <li class="nav-item px-3"><a href="#success-stories" class="nav-link fw-normal text-white">Success
+                Stories</a></li>
+            <li class="nav-item px-3"><a href="#faqs" class="nav-link fw-normal text-white">FAQ’s</a></li>
+            <li class="nav-item px-3">
+              <span class="d-flex align-items-center justify-content-center contact">
+                <a href="#contact" class="nav-link text-white">Contact Us</a>
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="myStoryWrappe" id="my-story">
-  <div class="container-fluid d-flex align-items-center flex-column t ">
-    <div class="row d-flex align-self-md-start ">
-      <!-- Heading -->
-      <div class="col-md-12 myStoryH1">
-        <h2 class="align-self-md-start">
-          From Overwhelm to Empowerment for Busy Professionals
-        </h2>
-      </div>
-    </div>
-
-    <div class="row align-self-md-start">
-      <!-- Text Block 1 -->
-      <div class="col-md-12 myStoryText1">
-        <p>
-          I know the demands of a busy lifestyle can lead to
-          restlessness and anxiety—I’ve been there. I used
-          to wake up with my mind racing, juggling work
-          responsibilities while struggling to maintain
-          balance at home. Realizing change was crucial, I
-          leveraged my work experience problem-solving
-          skills to transform my life.
-        </p>
-      </div>
-    </div>
-
-    <div class="row align-self-md-start">
-      <!-- Text Block 2 -->
-      <div class="col-md-12 myStoryText2">
-        <p>
-          By focusing on aligning my conscious thoughts
-          with intentional actions, I’ve turned stress
-          into a fulfilling equilibrium. As your life
-          coach, I’m committed to guiding you through this
-          journey, helping you achieve clarity and balance
-          amid your professional and personal demands.
-        </p>
-      </div>
-    </div>
-
-    <div class="row align-self-md-start">
-      <!-- Text Block 3 -->
-      <div class="col-md-12 myStoryText3">
-        <p>
-          Is it time to redefine your work-life harmony?
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    </nav>
+  </header>
 
 
 
@@ -247,400 +112,517 @@
 
 
 
-<section class="parallax" id="services">
-  <div class="overLayer"></div>
+  <section class="hero-bg d-flex justify-content-center w-100">
+    <div class="container hero-wrapper mx-auto">
+      <div class="row align-items-center justify-content-center hero-row">
 
-  <!-- Make the container fluid to prevent wrapping and remove default margins -->
-  <div class="container-fluid ourServices">
-    
-    <!-- Heading -->
-    <div class="row justify-content-center g-0">
-      <div class="col-12 ourServicesText">
-        <h2>Our Services</h2>
-      </div>
-    </div>
+        <!-- Image Column -->
+        <div class="col-md-5 col-12 hero-img">
+          <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/Home-Banner-image.webp" alt="HomePage-Profile"
+            width="433" height="619" decoding="async" fetchpriority="high" class="img-fluid">
+        </div>
 
-    <!-- Cards Row: no wrapping above md, normal wrap below -->
-    <div class="row cardWrapper g-3 flex-md-nowrap justify-content-center">
-      
-      <!-- Card 1 -->
-      <div class="col-md d-flex justify-content-center col-12">
-        <div class="card card1">
-          <div class="cardImage">
-            <img
-              src="https://bizprocoaching.com/wp-content/uploads/2025/07/boxone-img.webp"
-              alt="ourservice-boxoneimg"
-              class="img-fluid"
-              width="321"
-              height="215"
-              decoding="async"
-            >
+        <!-- Text Column -->
+        <div class="col-md-7 col-12 hero-text d-flex flex-column align-items-md-start align-items-center gap-3">
+          <div class="heroText1">
+            <p class="fw-medium ls">BUSINESS COACH | LIFE COACH</p>
           </div>
-          <div class="cardH3">
-            <h3>1-Hour Free Chat</h3>
+          <div class="heroText2">
+            <h1 class="fw-bold">Ready to transform your Business?</h1>
           </div>
-          <div class="cardP">
-            <p>
-              Our needs and experiences are different.
-              This time is dedicated to you—let’s
-              connect and understand your journey
-              together.
+          <div class="heroText3">
+            <p class="fw-normal">
+              As your coach, I’ll guide you every step of the way.<br>
+              But first, let’s talk.
             </p>
           </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-md d-flex justify-content-center col-12">
-        <div class="card card2">
-          <div class="cardImage">
-            <img
-              src="https://bizprocoaching.com/wp-content/uploads/2025/07/boxtwo-image.webp"
-              alt="ourservice-boxtwoimg"
-              class="img-fluid"
-              width="321"
-              height="215"
-              decoding="async"
-            >
-          </div>
-          <div class="cardH3">
-            <h3>Customized Coaching Program</h3>
-          </div>
-          <div class="cardP">
-            <p>
-              Through our discussions, we’ll design and
-              customize a program that perfectly fits
-              your unique circumstances.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md d-flex justify-content-center col-12">
-        <div class="card card3">
-          <div class="cardImage">
-            <img
-              src="https://bizprocoaching.com/wp-content/uploads/2025/07/box3-image.webp"
-              alt="ourservices-boxthree-img"
-              class="img-fluid"
-              width="321"
-              height="215"
-              loading="lazy"
-              decoding="async"
-            >
-          </div>
-          <div class="cardH3">
-            <h3>Define Your Path</h3>
-          </div>
-          <div class="cardP">
-            <p>30 min free online session</p>
-          </div>
-          <div class="cardP">
-            <p>
-              Check-in Time – Let’s review your journey
-              and work together to carve out your path
-              to empowerment.
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="successStoryWrapper" id="success-stories">
-  <div class="container-fluid successStoryContainer">
-
-    <!-- Heading -->
-    <div class="row">
-      <div class="col-12 successStorySmallText">
-        <h3>Success Stories</h3>
-      </div>
-      <div class="col-12 successStoryBigText">
-        <h2>See How Our Solutions Drive Change</h2>
-      </div>
-    </div>
-
-    <!-- Cards -->
-    <div class="row successStoryCardWrapper d-md-flex flex-md-row
-">
-      
-      <!-- Card 1 -->
-      <div class="col-md-4 col-12 d-flex justify-content-center ">
-        <div class="successStoryCard  ">
-          <figure>
-            <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/Sia.webp"
-                 alt="Testimonial-Sia-profile"
-                 width="75" height="75" loading="lazy" decoding="async">
-          </figure>
-          <div class="cardBigText">
-            <h3>"Meet Sia"</h3>
-          </div>
-          <p class="cardSmallText text-center">
-            "At 36, Sia felt trapped by guilt after losing savings to gambling. Seeking
-            peace, he realized that failure doesn’t define him. Embracing this truth, he
-            embarked on a transformative journey to find inner peace and let go of his past."
-          </p>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-4 col-12 d-flex justify-content-center">
-        <div class="successStoryCard">
-          <figure>
-            <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/Tom.webp"
-                 alt="Testimonial-Tom-Profile"
-                 width="75" height="75" loading="lazy" decoding="async">
-          </figure>
-          <div class="cardBigText">
-            <h3>"Meet Tom"</h3>
-          </div>
-          <p class="cardSmallText text-center">
-            "At 52, business owner Tom once faced mornings filled with anxiety. Recognizing
-            his self-imposed stress, he shifted his mindset and mastered time management.
-            Now, he approaches each day with calm, transforming both his work and life."
-          </p>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-4 col-12 d-flex justify-content-center">
-        <div class="successStoryCard">
-          <figure>
-            <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/Sara.webp"
-                 alt="Testimonial-Sara-Profile"
-                 width="75" height="75" loading="lazy" decoding="async">
-          </figure>
-          <div class="cardBigText">
-            <h3>"Meet Sarah"</h3>
-          </div>
-          <p class="cardSmallText text-center">
-            "Overwhelmed by work demands, Sarah neglected her children and felt guilty.
-            Determined to change, she took responsibility and found inner peace. Her journey
-            brought positive changes that ultimately strengthened their family bonds."
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-<section class="accordionContainer" id="faqs">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 accordionHeading">
-        <h2>Frequently Asked Questions</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <div class="accordion" id="accordionExample">
-
-          <!-- Accordion Item 1 -->
-          <div class="accordion-item">
-            <div class="accordion-header">
-              <div class="accordion-header-content" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button"
-     >
-                <h2 class="accordion-title">
-                  How do I know if I'm suitable for your life coaching program?
-                </h2>
-                <span class="accordion-toggle">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                       fill="rgb(201,216,224)" viewBox="0 0 24 24">
-                    <path d="M12 15.5l-7-7h14l-7 7z" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <div id="collapseOne" class="accordion-collapse collapse show"
-                 data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                We offer a complimentary session where we delve into your specific needs through a
-                series of insightful questions. This detailed exploration helps us understand your goals
-                and challenges, ensuring our program aligns perfectly with your journey.
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordion Item 2 -->
-          <div class="accordion-item">
-            <div class="accordion-header">
-              <div class="accordion-header-content collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
-                <h2 class="accordion-title">
-                  How long does a typical coaching engagement last?
-                </h2>
-                <span class="accordion-toggle">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                       fill="rgb(201,216,224)" viewBox="0 0 24 24">
-                    <path d="M12 15.5l-7-7h14l-7 7z" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <div id="collapseTwo" class="accordion-collapse collapse"
-                 data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Each situation is unique, but from our experience, a foundational course typically
-                includes 8 one-on-one sessions. This structure allows us to comprehensively address your
-                needs and guide you towards your goals.
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordion Item 3 -->
-          <div class="accordion-item">
-            <div class="accordion-header">
-              <div class="accordion-header-content collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
-                <h2 class="accordion-title">
-                  What makes BizPro Coaching different from other coaching services?
-                </h2>
-                <span class="accordion-toggle">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                       fill="rgb(201,216,224)" viewBox="0 0 24 24">
-                    <path d="M12 15.5l-7-7h14l-7 7z" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <div id="collapseThree" class="accordion-collapse collapse"
-                 data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                I’ve uniquely designed this program specifically for professionals facing the challenges
-                of an imbalanced life. Having been through similar experiences myself, I know what it
-                means to seek genuine support. The difference at BizPro Coaching is our integrity and
-                dedication—if I feel that I can’t help you, I will honestly recommend another coach who
-                can better meet your needs.
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-<footer id="contact">
-  <div class="footerWrapper">
-    <div class="container-fluid d-md-flex flex-md-row
-">
-      <div class="row align-items-center justify-content-between ">
-
-        <!-- Logo Column -->
-        <div class="col-md-4 col-12 footerFirst d-flex justify-content-center">
-          <div class="footerLogo d-flex justify-content-center">
-            <a href="https://bizprocoaching.com">
-              <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/cropped-Header-footer-logo-1.webp"
-                   alt="default-logo" class="img-fluid me-5">
+          <div class="heroText4">
+            <a href="https://calendly.com/bizprocoaching/free-discovery-call" target="_blank"
+              class="text-decoration-none">
+              <span class="heroText4Link d-flex justify-content-center align-items-center text-white fw-normal">
+                <span>Book Now</span>
+              </span>
             </a>
           </div>
         </div>
 
-        <!-- Center Column -->
-        <div class="col-md-6 col-12 footerCenter text-center">
-          <h5 class="footerCenterBig">BizPro Coaching</h5>
-          <p class="footerCenterBig">
-            Email :
-            <a class="footerCenterBig" href="mailto:hello@bizprocoaching.com">hello@bizprocoaching.com</a>
-          </p>
-          <div class="copyright">
-            <p>© 2025 BizPro Coaching – All rights reserved</p>
-          </div>
-          <p class="TandC">
-            Terms &amp; Conditions <span style="color:#ffffff">|</span> Privacy Policy
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="myStoryWrappe" id="my-story">
+    <div class="container-fluid d-flex align-items-center flex-column">
+      <div class="row d-flex align-self-md-start">
+        <!-- Heading -->
+        <div class="col-md-12 myStoryH1">
+          <h2 class="align-self-md-start fw-bold text-white">
+            From Overwhelm to Empowerment for Busy Professionals
+          </h2>
+        </div>
+      </div>
+
+      <div class="row align-self-md-start">
+        <!-- Text Block 1 -->
+        <div class="col-md-12 myStoryText1">
+          <p class="fw-normal">
+            I know the demands of a busy lifestyle can lead to
+            restlessness and anxiety—I’ve been there. I used
+            to wake up with my mind racing, juggling work
+            responsibilities while struggling to maintain
+            balance at home. Realizing change was crucial, I
+            leveraged my work experience problem-solving
+            skills to transform my life.
           </p>
         </div>
+      </div>
 
-        <!-- Icons Column -->
-        <div class="col-md-2 col-12 footerLast d-flex justify-content-center align-self-md-end">
-          <div class="footerIcon">
-            <div class="icon">
+      <div class="row align-self-md-start">
+        <!-- Text Block 2 -->
+        <div class="col-md-12 myStoryText2">
+          <p class="fw-normal">
+            By focusing on aligning my conscious thoughts
+            with intentional actions, I’ve turned stress
+            into a fulfilling equilibrium. As your life
+            coach, I’m committed to guiding you through this
+            journey, helping you achieve clarity and balance
+            amid your professional and personal demands.
+          </p>
+        </div>
+      </div>
 
-              <!-- Facebook -->
-              <span class="facebook">
-                <a href="https://linktr.ee/kia.salehi" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="26" viewBox="0 0 14 26" fill="none">
-                    <path d="M12.8125 14.9524H9.15039V25.8899H4.26758V14.9524H0.263672V10.4602H4.26758V6.99341C4.26758 3.08716 6.61133 0.889893 10.1758 0.889893C11.8848 0.889893 13.6914 1.23169 13.6914 1.23169V5.08911H11.6895C9.73633 5.08911 9.15039 6.26099 9.15039 7.53052V10.4602H13.4961L12.8125 14.9524Z" fill="#EEBA0C"/>
-                  </svg>
-                </a>
-              </span>
+      <div class="row align-self-md-start">
+        <!-- Text Block 3 -->
+        <div class="col-md-12 myStoryText3">
+          <p class="fw-normal">
+            Is it time to redefine your work-life harmony?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-              <!-- LinkedIn -->
-              <span class="icon">
-                <a href="https://linktr.ee/kia.salehi" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                    <path d="M4.95312 22.7649H0.412109V8.16528H4.95312V22.7649ZM2.6582 6.21216C1.24219 6.21216 0.0703125 4.99146 0.0703125 3.52661C0.0703125 2.1106 1.24219 0.938721 2.6582 0.938721C4.12305 0.938721 5.29492 2.1106 5.29492 3.52661C5.29492 4.99146 4.12305 6.21216 2.6582 6.21216ZM21.8965 22.7649H17.4043V15.6848C17.4043 13.9758 17.3555 11.8274 15.0117 11.8274C12.668 11.8274 12.3262 13.634 12.3262 15.5383V22.7649H7.78516V8.16528H12.1309V10.1672H12.1797C12.8145 9.04419 14.2793 7.82349 16.4766 7.82349C21.0664 7.82349 21.9453 10.8508 21.9453 14.7571V22.7649H21.8965Z" fill="#EEBA0C"/>
-                  </svg>
-                </a>
-              </span>
 
-              <!-- Instagram -->
-              <span class="icon">
-                <a href="https://linktr.ee/kia.salehi" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23"
-                                    fill="none">
-                                    <path
-                                        d="M11.0117 5.77466C14.0879 5.77466 16.627 8.31372 16.627 11.3899C16.627 14.5149 14.0879 17.0051 11.0117 17.0051C7.88672 17.0051 5.39648 14.5149 5.39648 11.3899C5.39648 8.31372 7.88672 5.77466 11.0117 5.77466ZM11.0117 15.052C13.0137 15.052 14.625 13.4407 14.625 11.3899C14.625 9.38794 13.0137 7.77661 11.0117 7.77661C8.96094 7.77661 7.34961 9.38794 7.34961 11.3899C7.34961 13.4407 9.00977 15.052 11.0117 15.052ZM18.1406 5.57935C18.1406 6.31177 17.5547 6.89771 16.8223 6.89771C16.0898 6.89771 15.5039 6.31177 15.5039 5.57935C15.5039 4.84692 16.0898 4.26099 16.8223 4.26099C17.5547 4.26099 18.1406 4.84692 18.1406 5.57935ZM21.8516 6.89771C21.9492 8.70435 21.9492 14.1243 21.8516 15.9309C21.7539 17.6887 21.3633 19.2024 20.0938 20.5208C18.8242 21.7903 17.2617 22.1809 15.5039 22.2786C13.6973 22.3762 8.27734 22.3762 6.4707 22.2786C4.71289 22.1809 3.19922 21.7903 1.88086 20.5208C0.611328 19.2024 0.220703 17.6887 0.123047 15.9309C0.0253906 14.1243 0.0253906 8.70435 0.123047 6.89771C0.220703 5.13989 0.611328 3.57739 1.88086 2.30786C3.19922 1.03833 4.71289 0.647705 6.4707 0.550049C8.27734 0.452393 13.6973 0.452393 15.5039 0.550049C17.2617 0.647705 18.8242 1.03833 20.0938 2.30786C21.3633 3.57739 21.7539 5.13989 21.8516 6.89771ZM19.5078 17.8352C20.0938 16.4192 19.9473 13.0012 19.9473 11.3899C19.9473 9.82739 20.0938 6.40942 19.5078 4.94458C19.1172 4.01685 18.3848 3.2356 17.457 2.8938C15.9922 2.30786 12.5742 2.45435 11.0117 2.45435C9.40039 2.45435 5.98242 2.30786 4.56641 2.8938C3.58984 3.28442 2.85742 4.01685 2.4668 4.94458C1.88086 6.40942 2.02734 9.82739 2.02734 11.3899C2.02734 13.0012 1.88086 16.4192 2.4668 17.8352C2.85742 18.8118 3.58984 19.5442 4.56641 19.9348C5.98242 20.5208 9.40039 20.3743 11.0117 20.3743C12.5742 20.3743 15.9922 20.5208 17.457 19.9348C18.3848 19.5442 19.166 18.8118 19.5078 17.8352Z"
-                                        fill="#EEBA0C"></path>
-                                </svg>
-                </a>
-              </span>
 
-              <!-- YouTube -->
-              <span class="icon">
-                <a href="https://linktr.ee/kia.salehi" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="19" viewBox="0 0 28 19" fill="none">
-                    <path d="M26.7617 2.99341C27.3477 5.04419 27.3477 9.43872 27.3477 9.43872C27.3477 9.43872 27.3477 13.7844 26.7617 15.884C26.4688 17.0559 25.541 17.9348 24.418 18.2278C22.3184 18.7649 14.0176 18.7649 14.0176 18.7649C14.0176 18.7649 5.66797 18.7649 3.56836 18.2278C2.44531 17.9348 1.51758 17.0559 1.22461 15.884C0.638672 13.7844 0.638672 9.43872 0.638672 9.43872C0.638672 9.43872 0.638672 5.04419 1.22461 2.99341C1.51758 1.82153 2.44531 0.893799 3.56836 0.60083C5.66797 0.0148926 14.0176 0.0148926 14.0176 0.0148926C14.0176 0.0148926 22.3184 0.0148926 24.418 0.60083C25.541 0.893799 26.4688 1.82153 26.7617 2.99341ZM11.2832 13.3938L18.2168 9.43872L11.2832 5.48364V13.3938Z" fill="#EEBA0C"/>
-                  </svg>
-                </a>
-              </span>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="parallax" id="services">
+    <div class="overLayer"></div>
+
+    <div class="container-fluid ourServices d-flex flex-column align-items-center w-100">
+
+      <!-- Heading -->
+      <div class="row justify-content-center g-0">
+        <div class="col-12 ourServicesText text-center">
+          <h2 class="fw-bold">Our Services</h2>
+        </div>
+      </div>
+
+      <!-- Cards Row -->
+      <div class="row cardWrapper g-3 flex-md-nowrap justify-content-center">
+
+        <!-- Card 1 -->
+        <div class="col-md d-flex justify-content-center col-12">
+          <div class="card card1 mx-auto">
+            <div class="cardImage">
+              <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/boxone-img.webp"
+                alt="ourservice-boxoneimg" class="img-fluid" width="321" height="215" decoding="async">
+            </div>
+            <div class="cardH3">
+              <h3 class="fw-bold text-center text-white">1-Hour Free Chat</h3>
+            </div>
+            <div class="cardP">
+              <p class="fw-medium text-center text-white">
+                Our needs and experiences are different.
+                This time is dedicated to you—let’s
+                connect and understand your journey
+                together.
+              </p>
             </div>
           </div>
         </div>
-        <!-- End Icons Column -->
+
+        <!-- Card 2 -->
+        <div class="col-md d-flex justify-content-center col-12">
+          <div class="card card2 mx-auto">
+            <div class="cardImage">
+              <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/boxtwo-image.webp"
+                alt="ourservice-boxtwoimg" class="img-fluid" width="321" height="215" decoding="async">
+            </div>
+            <div class="cardH3">
+              <h3 class="fw-bold text-center text-white">Customized Coaching Program</h3>
+            </div>
+            <div class="cardP">
+              <p class="fw-medium text-center text-white">
+                Through our discussions, we’ll design and
+                customize a program that perfectly fits
+                your unique circumstances.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md d-flex justify-content-center col-12">
+          <div class="card card3 mx-auto">
+            <div class="cardImage">
+              <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/box3-image.webp"
+                alt="ourservices-boxthree-img" class="img-fluid" width="321" height="215" loading="lazy"
+                decoding="async">
+            </div>
+            <div class="cardH3">
+              <h3 class="fw-bold text-center text-white">Define Your Path</h3>
+            </div>
+            <div class="cardP">
+              <p class="fw-medium text-center text-white">30 min free online session</p>
+            </div>
+            <div class="cardP">
+              <p class="fw-medium text-center text-white">
+                Check-in Time – Let’s review your journey
+                and work together to carve out your path
+                to empowerment.
+              </p>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
 
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+  <section class="successStoryWrapper w-100 d-flex flex-column align-items-center justify-content-center mb-5"
+    id="success-stories">
+    <div class="container-fluid successStoryContainer">
+      <!-- Heading -->
+      <div class="row">
+        <div class="col-12 successStorySmallText text-center fw-medium text-uppercase">
+          <h3 class="text-warning">Success Stories</h3>
+        </div>
+        <div class="col-12 successStoryBigText text-center">
+          <h2 class="fw-bold">See How Our Solutions Drive Change</h2>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="row successStoryCardWrapper d-md-flex flex-md-row mt-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 col-12 d-flex justify-content-center">
+          <div class="successStoryCard">
+            <figure class="d-flex justify-content-center mb-3">
+              <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/Sia.webp" alt="Testimonial-Sia-profile"
+                width="75" height="75" loading="lazy" decoding="async">
+            </figure>
+            <div class="cardBigText">
+              <h3 class="fw-bold">"Meet Sia"</h3>
+            </div>
+            <p class="cardSmallText fw-normal text-center">
+              "At 36, Sia felt trapped by guilt after losing savings to gambling. Seeking
+              peace, he realized that failure doesn’t define him. Embracing this truth, he
+              embarked on a transformative journey to find inner peace and let go of his past."
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 col-12 d-flex justify-content-center">
+          <div class="successStoryCard">
+            <figure class="d-flex justify-content-center mb-3">
+              <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/Tom.webp" alt="Testimonial-Tom-Profile"
+                width="75" height="75" loading="lazy" decoding="async">
+            </figure>
+            <div class="cardBigText">
+              <h3 class="fw-bold">"Meet Tom"</h3>
+            </div>
+            <p class="cardSmallText fw-normal text-center">
+              "At 52, business owner Tom once faced mornings filled with anxiety. Recognizing
+              his self-imposed stress, he shifted his mindset and mastered time management.
+              Now, he approaches each day with calm, transforming both his work and life."
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 col-12 d-flex justify-content-center">
+          <div class="successStoryCard">
+            <figure class="d-flex justify-content-center mb-3">
+              <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/Sara.webp" alt="Testimonial-Sara-Profile"
+                width="75" height="75" loading="lazy" decoding="async">
+            </figure>
+            <div class="cardBigText">
+              <h3 class="fw-bold">"Meet Sarah"</h3>
+            </div>
+            <p class="cardSmallText fw-normal text-center">
+              "Overwhelmed by work demands, Sarah neglected her children and felt guilty.
+              Determined to change, she took responsibility and found inner peace. Her journey
+              brought positive changes that ultimately strengthened their family bonds."
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section class="accordionContainer w-100" id="faqs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 accordionHeading text-center">
+          <h2 class="fw-bold text-white">Frequently Asked Questions</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="accordion mt-3" id="accordionExample">
+
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item mb-2">
+              <div class="accordion-header">
+                <div class="accordion-header-content d-flex justify-content-between align-items-center"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne" role="button">
+                  <h2 class="accordion-title fw-bold">
+                    How do I know if I'm suitable for your life coaching program?
+                  </h2>
+                  <span class="accordion-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="rgb(201,216,224)"
+                      viewBox="0 0 24 24">
+                      <path d="M12 15.5l-7-7h14l-7 7z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body fw-normal">
+                  We offer a complimentary session where we delve into your specific needs through a
+                  series of insightful questions. This detailed exploration helps us understand your goals
+                  and challenges, ensuring our program aligns perfectly with your journey.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item mb-2">
+              <div class="accordion-header">
+                <div class="accordion-header-content d-flex justify-content-between align-items-center collapsed"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo" role="button">
+                  <h2 class="accordion-title fw-bold">
+                    How long does a typical coaching engagement last?
+                  </h2>
+                  <span class="accordion-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="rgb(201,216,224)"
+                      viewBox="0 0 24 24">
+                      <path d="M12 15.5l-7-7h14l-7 7z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body fw-normal">
+                  Each situation is unique, but from our experience, a foundational course typically
+                  includes 8 one-on-one sessions. This structure allows us to comprehensively address your
+                  needs and guide you towards your goals.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item mb-2">
+              <div class="accordion-header">
+                <div class="accordion-header-content d-flex justify-content-between align-items-center collapsed"
+                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree" role="button">
+                  <h2 class="accordion-title fw-bold">
+                    What makes BizPro Coaching different from other coaching services?
+                  </h2>
+                  <span class="accordion-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="rgb(201,216,224)"
+                      viewBox="0 0 24 24">
+                      <path d="M12 15.5l-7-7h14l-7 7z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body fw-normal">
+                  I’ve uniquely designed this program specifically for professionals facing the challenges
+                  of an imbalanced life. Having been through similar experiences myself, I know what it
+                  means to seek genuine support. The difference at BizPro Coaching is our integrity and
+                  dedication—if I feel that I can’t help you, I will honestly recommend another coach who
+                  can better meet your needs.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <footer id="contact" class="w-100">
+    <div class="footerWrapper d-flex align-items-center justify-content-around">
+      <div class="container-fluid d-md-flex flex-md-row">
+        <div class="row align-items-center justify-content-between">
+
+          <!-- Logo Column -->
+          <div class="col-md-4 col-12 footerFirst d-flex justify-content-center">
+            <div class="footerLogo d-flex justify-content-center">
+              <a href="https://bizprocoaching.com">
+                <img src="https://bizprocoaching.com/wp-content/uploads/2025/07/cropped-Header-footer-logo-1.webp"
+                  alt="default-logo" class="img-fluid me-5">
+              </a>
+            </div>
+          </div>
+
+          <!-- Center Column -->
+          <div
+            class="col-md-6 col-12 footerCenter d-flex flex-column align-items-center justify-content-center text-center">
+            <h5 class="footerCenterBig fw-bold text-white">BizPro Coaching</h5>
+            <p class="footerCenterBig fw-bold text-white">
+              Email :
+              <a class="footerCenterBig fw-bold text-white"
+                href="mailto:hello@bizprocoaching.com">hello@bizprocoaching.com</a>
+            </p>
+            <div class="copyright fw-normal text-white">
+              <p>© 2025 BizPro Coaching – All rights reserved</p>
+            </div>
+            <p class="TandC fw-normal text-warning">
+              Terms &amp; Conditions <span class="text-white">|</span> Privacy Policy
+            </p>
+          </div>
+
+          <!-- Icons Column -->
+          <div class="col-md-2 col-12 footerLast d-flex justify-content-center align-self-md-end">
+            <div class="footerIcon d-flex justify-content-center align-items-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+
+                <!-- Facebook -->
+                <span class="facebook me-3">
+                  <a href="https://linktr.ee/kia.salehi" target="_blank">
+                    <!-- SVG unchanged -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="26" viewBox="0 0 14 26" fill="none">
+                      <path
+                        d="M12.8125 14.9524H9.15039V25.8899H4.26758V14.9524H0.263672V10.4602H4.26758V6.99341C4.26758 3.08716 6.61133 0.889893 10.1758 0.889893C11.8848 0.889893 13.6914 1.23169 13.6914 1.23169V5.08911H11.6895C9.73633 5.08911 9.15039 6.26099 9.15039 7.53052V10.4602H13.4961L12.8125 14.9524Z"
+                        fill="#EEBA0C" />
+                    </svg>
+                  </a>
+                </span>
+
+                <!-- LinkedIn -->
+                <span class="icon me-3">
+                  <a href="https://linktr.ee/kia.salehi" target="_blank">
+                    <!-- SVG unchanged -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                      <path
+                        d="M4.95312 22.7649H0.412109V8.16528H4.95312V22.7649ZM2.6582 6.21216C1.24219 6.21216 0.0703125 4.99146 0.0703125 3.52661C0.0703125 2.1106 1.24219 0.938721 2.6582 0.938721C4.12305 0.938721 5.29492 2.1106 5.29492 3.52661C5.29492 4.99146 4.12305 6.21216 2.6582 6.21216ZM21.8965 22.7649H17.4043V15.6848C17.4043 13.9758 17.3555 11.8274 15.0117 11.8274C12.668 11.8274 12.3262 13.634 12.3262 15.5383V22.7649H7.78516V8.16528H12.1309V10.1672H12.1797C12.8145 9.04419 14.2793 7.82349 16.4766 7.82349C21.0664 7.82349 21.9453 10.8508 21.9453 14.7571V22.7649H21.8965Z"
+                        fill="#EEBA0C" />
+                    </svg>
+                  </a>
+                </span>
+
+                <!-- Instagram -->
+                <!-- Instagram -->
+                <span class="icon me-3">
+                  <a href="https://linktr.ee/kia.salehi" target="_blank" rel="noopener noreferrer">
+                    <!-- Official Instagram glyph -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-3a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"
+                        fill="#EEBA0C" />
+                    </svg>
+                  </a>
+                </span>
+
+
+
+                <!-- YouTube -->
+                <span class="icon">
+                  <a href="https://linktr.ee/kia.salehi" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="19" viewBox="0 0 28 19" fill="none"
+                      aria-hidden="true" focusable="false">
+                      <path
+                        d="M26.7617 2.99341C27.3477 5.04419 27.3477 9.43872 27.3477 9.43872C27.3477 9.43872 27.3477 13.7844 26.7617 15.884C26.4688 17.0559 25.541 17.9348 24.418 18.2278C22.3184 18.7649 14.0176 18.7649 14.0176 18.7649C14.0176 18.7649 5.66797 18.7649 3.56836 18.2278C2.44531 17.9348 1.51758 17.0559 1.22461 15.884C0.638672 13.7844 0.638672 9.43872 0.638672 9.43872C0.638672 9.43872 0.638672 5.04419 1.22461 2.99341C1.51758 1.82153 2.44531 0.893799 3.56836 0.60083C5.66797 0.0148926 14.0176 0.0148926 14.0176 0.0148926C14.0176 0.0148926 22.3184 0.0148926 24.418 0.60083C25.541 0.893799 26.4688 1.82153 26.7617 2.99341ZM11.2832 13.3938L18.2168 9.43872L11.2832 5.48364V13.3938Z"
+                        fill="#EEBA0C" />
+                    </svg>
+                  </a>
+                </span>
+
+
+              </div>
+            </div>
+          </div>
+          <!-- End Icons Column -->
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

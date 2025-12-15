@@ -1,5 +1,4 @@
-
-  /* Wrapper */
+/* Wrapper */
 .myStoryWrappe {
   padding: 80px 120px;
   background-color: #393D40;
@@ -8,13 +7,10 @@
 /* Heading */
 .myStoryH1 h2 {
   max-width: 889px;
-  color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 46px;
-  font-weight: 700;
   line-height: 60px;
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px; /* keep exact spacing */
 }
 
 /* Paragraphs */
@@ -22,10 +18,8 @@
   color: rgb(136, 147, 168);
   font-size: 18px;
   line-height: 30px;
-  font-weight: 400;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px; /* keep exact spacing */
 }
 
 /* Text blocks */
